@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captura de Emociones</title>
+  
+</head>
+
+<body>
+
+  <header class="menu">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span class="icon-open">☰</span>
+      <span class="icon-close">✕</span>
+    </label>
+
+    <nav class="menu-items">
+      <ul>
+        <li><a href="#inicio">Nosotros</a></li>
+        <li><a href="#">Galería</a></li>
+        <li><a href="#">Proceso</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section id="inicio" class="inicio">
+    <h1><span>CAPTURAMOS</span><br>LOS<br><span>SETIMIENTOS</span></h1>
+
+    <div class="imagenes">
+      <img src="img/pareja1.png" alt="pareja1" class="img-lateral izquierda">
+      <img src="img/pareja2.png" alt="pareja central" class="img-central">
+      <img src="img/pareja3.png" alt="pareja3" class="img-lateral derecha">
+    </div>
+  </section>
+
+  <!-- Sección Nosotros -->
+  <section id="nosotros" class="promo-container">
+    <!-- Corner dots -->
+    <div class="corner-dots top-left"></div>
+    <div class="corner-dots top-right"></div>
+
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-text">LOVERS OF LOVE</div>
+      <div class="header-text">FINE ART FILM PHOTOGRAPHERS</div>
+    </div>
+
+    <!-- Main content -->
+    <section class="main-content">
+      <div class="photo-stack">
+        <div class="polaroid">
+          <img src="img/image (2).png" alt="">
+        </div>
+      </div>
+
+      <div class="text-content">
+        <h1 class="title">HOLA<br>AQUÍ</h1>
+        <p class="description">
+          Somos cazadores de pantallas profesionales, pregoneros de bodas y amantes del amor. En resumen, somos grandes
+          fanáticos del matrimonio! El matrimonio es un compromiso muy especial y tu boda marca el testimonio y la
+          celebración de este vínculo. Estamos muy emocionados por este increíble próximo capítulo de tu vida & te
+          recomendamos de todo corazón!
+        </p>
+
+        <div class="brand">TUS NUPCIALISTA
+
+          <div class="icons">
+            <img class="icon" src="img/anillos.svg" alt="anillo icon">
+            <img class="icon" src="img/estrella-naranja.svg" alt="Star icon">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="corner-dots bottom-left"></div>
+    <div class="corner-dots bottom-right"></div>
+  </section>
+
+  <!-- Sección Galeria -->
+  <section id="galeria" class="gallery-container">
+    <h1 class="gallery-title">Nuestros Momentos Mágicos</h1>
+
+    <div class="gallery-grid">
+      <!-- Gallery items with placeholder images and links -->
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_1.jpeg" alt="Novia con ramo de flores">
+          <div class="photo-description">Bouquet de ensueño</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_2.jpeg" alt="Pareja bajo los árboles">
+          <div class="photo-description">Entre naturaleza</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_3.jpeg" alt="Novios en jardín">
+          <div class="photo-description">Momento mágico</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_4.jpeg" alt="Novia en acantilado">
+          <div class="photo-description">Junto al mar</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_5.jpeg" alt="Pareja caminando por sendero">
+          <div class="photo-description">Camino compartido</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_6.jpeg" alt="Novios junto al mar">
+          <div class="photo-description">Atardecer romántico</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_7.jpeg" alt="Novia con vestido blanco">
+          <div class="photo-description">Elegancia pura</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" title="Ver imagen completa">
+          <img src="img/galeria_8.jpg" alt="Pareja en paisaje montañoso">
+          <div class="photo-description">Amor en las alturas</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Precios -->
+  <section class="package-builder">
+    <!-- Card 1: Hours -->
+    <div class="builder-card pink-bg Card-1">
+      <h2 class="card-title large-title">CONSTRUYE TU PROPIO PAQUETE</h2>
+      <hr>
+      <h3 class="card-subtitle">HORAS TOTALES:</h3>
+
+      <div class="slider-container">
+        <!-- El valor inicial se establece aquí -->
+        <input 
+            type="range" 
+            class="custom-range" 
+            min="0" 
+            max="100" 
+            value="50"
+            style="--value: 50%"
+            oninput="this.style.setProperty('--value', this.value + '%')">
+    </div>
+    </div>
+
+    <!-- Card 2: Session -->
+    <div class="builder-card yellow-bg Card-2">
+      <h2 class="card-title">SESIÓN DE COMPROMISO</h2>
+      <div class="option-toggle">
+        <div class="toggle-switch toggle-off">
+          <div class="toggle-handle"></div>
+        </div>
+        <span class="toggle-text">NO</span>
+      </div>
+    </div>
+
+    <!-- Card 3: Ceremony -->
+    <div class="builder-card white-bg Card-3">
+      <h2 class="card-title">VIDEO DE LA CEREMONIA</h2>
+      <div class="option-toggle">
+        <div class="toggle-switch toggle-off">
+          <div class="toggle-handle"></div>
+        </div>
+        <span class="toggle-text">NO</span>
+      </div>
+    </div>
+
+    <!-- Card 4: Digital -->
+    <div class="builder-card blue-bg Card-4">
+      <h2 class="card-title">SOLO DIGITAL?</h2>
+      <div class="option-toggle">
+        <div class="toggle-switch toggle-on">
+          <div class="toggle-handle"></div>
+        </div>
+        <span class="toggle-text">SI</span>
+      </div>
+    </div>
+
+    <!-- Card 5: Photo Booth -->
+    <div class="builder-card yellow-bg Card-5">
+      <h2 class="card-title">CABINA DE FOTOS</h2>
+      <div class="option-toggle">
+        <input type="number">
+
+      </div>
+      <h3 class="toggle-text">HORAS</h3>
+    </div>
+
+    <!-- Card 6: Location -->
+    <div class="builder-card black-bg Card-6">
+      <h2 class="card-title">LUGAR</h2>
+      <p>Selecciona una región</p>
+      <div class="map-section">
+        <div class="map-container">
+          <img class="map-image" src="img/mapa.svg" alt="US Map">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7: Total -->
+    <div class="builder-card orange-bg total-section Card-7">
+      <h2 class="card-title">TOTAL</h2>
+      <div class="price-amount">$1,935</div>
+    </div>
+
+    <!-- Card 8: Email -->
+    <div class="builder-card pink-bg email-section Card-8">
+      <div>
+        <h2 class="card-title">ENVÍA MI PAQUETE</h2>
+        <input type="email" class="entry-email" placeholder="Email">
+      </div>
+
+      <div class="approval-seal">SELLO DE APROBACIÓN</div>
+    </div>
+  </section>
+
+  <!-- Chat button -->
+  <div><a href="#" class="chat-button">CHAT</a></div>
+</body>
+
+</html>
