@@ -1,0 +1,250 @@
+ .package-builder {
+     margin: 0 auto;
+     display: grid;
+     grid-template-areas: "s1 s1 s2 s3 s4"
+                            "s5 s6 s6 s7 s7"
+                            "s5 s6 s6 s8 s8";
+     gap: 2px;
+ }
+
+ .builder-card {
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     min-height: 180px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .pink-bg {
+     background-color: #FF9999;
+ }
+
+ .yellow-bg {
+     background-color: #FFEB3B;
+ }
+
+ .white-bg {
+     background-color: #747272;
+ }
+
+ .blue-bg {
+     background-color: #2196F3;
+ }
+
+ .orange-bg {
+     background-color: #FF9800;
+ }
+
+ .black-bg {
+     background-color: #000000;
+     color: white;
+ }
+
+ .card-title {
+     font-size: 20px;
+     font-weight: bold;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+     line-height: 1.2;
+ }
+
+ .large-title {
+     font-size: 24px;
+ }
+
+ .card-subtitle {
+     font-size: 16px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     color: #0D47A1;
+ }
+
+ .option-toggle {
+     display: flex;
+     align-items: center;
+     margin-top: 15px;
+ }
+
+ .toggle-switch {
+     width: 70px;
+     height: 36px;
+     background-color: white;
+     border-radius: 18px;
+     display: flex;
+     align-items: center;
+     padding: 0 4px;
+     position: relative;
+     margin-right: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .toggle-handle {
+     width: 28px;
+     height: 28px;
+     background-color: #2196F3;
+     border-radius: 50%;
+     position: absolute;
+ }
+
+ .toggle-off .toggle-handle {
+     left: 4px;
+ }
+
+ .toggle-on .toggle-handle {
+     right: 4px;
+     background-color: #FF5722;
+ }
+
+ .toggle-text {
+     font-weight: bold;
+     color: #0D47A1;
+ }
+
+ .slider-container {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .slider {
+     width: 100%;
+     height: 5px;
+     background-color: #D1D1D1;
+     border-radius: 5px;
+     position: relative;
+ }
+
+ .slider-fill {
+     position: absolute;
+     height: 100%;
+     background-color: #2196F3;
+     border-radius: 5px;
+     width: 60%;
+ }
+
+ .slider-handle {
+     width: 30px;
+     height: 30px;
+     background-color: #2196F3;
+     border-radius: 50%;
+     position: absolute;
+     top: 50%;
+     left: 60%;
+     transform: translate(-50%, -50%);
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Map Section */
+ .map-section {
+     position: relative;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .map-container {
+     flex-grow: 1;
+     position: relative;
+ }
+
+ .map-image {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+ }
+
+ /* Total Price Section */
+ .total-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .price-label {
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+ .price-amount {
+     font-size: 40px;
+     font-weight: bold;
+     color: #FF5722;
+ }
+
+ /* Submit Section */
+ .entry-email {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .submit-button {
+     background-color: #FF5722;
+     color: white;
+     border: none;
+     border-radius: 20px;
+     padding: 10px 20px;
+     font-weight: bold;
+     cursor: pointer;
+     margin-top: 15px;
+     align-self: flex-start;
+ }
+
+ .approval-seal {
+     align-self: flex-end;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background-color: #FF5722;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-size: 12px;
+     text-align: center;
+     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Make the grid responsive */
+ @media (max-width: 768px) {
+     .package-builder {
+        grid-template-areas: "s1 s1"
+        "s2 s3"
+        "s4 s5"
+        "s6 s6"
+        "s7 s7"
+        "s8 s8";
+     }
+
+     .builder-card {
+         min-height: 150px;
+     }
+ }
+.Card-1{
+    grid-area: s1;
+}
+.Card-2{
+    grid-area: s2;
+}
+.Card-3{
+    grid-area: s3;
+}
+.Card-4{
+    grid-area: s4;
+}
+.Card-5{
+    grid-area: s5;
+}
+.Card-6{
+    grid-area: s6;
+}
+.Card-7{
+    grid-area: s7;
+}
+.Card-8{
+    grid-area: s8;
+}
