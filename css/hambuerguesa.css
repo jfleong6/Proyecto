@@ -1,0 +1,89 @@
+.menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+.menu-items ul {
+    z-index: 5;
+    position: fixed;
+    display: flex;
+    right: 1rem;
+    list-style: none;
+    gap: 50px;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.menu-items ul li a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        position: fixed;
+        right: 1rem;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+    }
+
+    .menu-icon span {
+        position: absolute;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .icon-close {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    .menu-toggle:checked+.menu-icon .icon-open {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    .menu-toggle:checked+.menu-icon .icon-close {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .menu-items {
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 0.0) 0%,
+
+                rgba(252, 181, 210, 1) 50%);
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .menu-items ul {
+        display: block;
+    }
+
+    .menu-items ul li {
+        font-size: 2rem;
+        text-align: end;
+        margin-right: 50px;
+        padding: 20px;
+    }
+
+    .menu-toggle:checked~.menu-items {
+        transform: translateX(0%);
+    }
+}
